@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVGs Espaciados</title>
+<style>
+  /* Configuramos el diseño en una hoja tamaño A4 */
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(4, 1fr);   /* 4 filas */
+    gap: 1cm; /* Espacio entre los SVGs */
+    margin: 0;
+    padding: 1cm;
+    width: 210mm; /* Ancho del papel A4 */
+    height: 297mm; /* Altura del papel A4 */
+    box-sizing: border-box;
+  }
+
+  .svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1cm;
+    height: 1cm;
+    border: 1px dashed #ccc; /* Opcional: para visualizar los contenedores */
+  }
+
+  img, object {
+    width: 1cm;
+    height: 1cm;
+  }
+
+  @media print {
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .svg-container {
+      border: none; /* Quita los bordes al imprimir */
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Inserta tus archivos SVG aquí -->
+  <div class="svg-container">
+    <img src="tag25h9-8.svg" alt="SVG 1">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-9.svg" alt="SVG 2">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-10.svg" alt="SVG 3">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-11.svg" alt="SVG 4">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-12.svg" alt="SVG 5">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-13.svg" alt="SVG 6">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-14.svg" alt="SVG 7">
+  </div>
+  <div class="svg-container">
+    <img src="tag25h9-15.svg" alt="SVG 8">
+  </div>
+  
+</body>
+</html>

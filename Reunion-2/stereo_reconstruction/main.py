@@ -9,6 +9,7 @@ from calibration.calib import  board_points, detect_board
 from disparity.disp import get_disparity_method, compute_disparity
 from utils import read_pickle
 from images import prepare_imgs, process_images
+from filter_point_cloud import filter_point_cloud
 
 ################## SETUP
 
@@ -17,8 +18,8 @@ calib_results_dir = "data/stereo"
 checkerboard = factory.checkerboard()
 square_size_mm = factory.square_size()
 
-captures_dir = "data/stereo/captures/budha_board"
-rectified_dir = "data/stereo/captures/rect_budha_board"
+captures_dir = "data/stereo/captures/dataset_raiz"
+rectified_dir = "data/stereo/captures/rect_dataset_raiz"
 
 ################# CALIBRATION
 
@@ -41,9 +42,10 @@ undistort(
 ################ RECONSTRUCTION
 
 # input images
-input_dir = "data/stereo/captures/budha_board"
+input_dir = "data/stereo/captures/dataset_raiz"
 
 # Known object to detect in images
+checkerboard = (9,6)
 object_points = board_points(checkerboard)
 object_points_mm = object_points * square_size_mm
 
@@ -84,6 +86,8 @@ all_points_3d = np.empty((0, 3))
 all_colors = np.empty((0, 3))
 all_camera_extrinsics = []
 export_num = 0
+
+
 for left_file_name, right_file_name in zip(
         left_file_names, right_file_names):
 
@@ -99,6 +103,10 @@ for left_file_name, right_file_name in zip(
         left_found, left_corners = detect_board(checkerboard, left_image_rectified)
         right_found, right_corners = detect_board(checkerboard, right_image_rectified)
 
+        if(not left_found or not right_found):
+            print(left_file_name, "is not usable")
+            continue
+
         left_color = cv2.cvtColor(left_image_rectified, cv2.COLOR_GRAY2BGR)
         right_color = cv2.cvtColor(right_image_rectified, cv2.COLOR_GRAY2BGR)
         # left_board_image = draw_checkerboard(left_color, checkerboard, left_corners, left_found)
@@ -106,13 +114,14 @@ for left_file_name, right_file_name in zip(
         # cv2.imshow("left board", left_board_image)
         # cv2.imshow("right board", right_board_image)
         # detection = np.hstack((left_board_image, right_board_image))
-        #corr = draw_correspondences(left_color, right_color, left_corners, right_corners)
-        #cv2.imshow("correspondences", corr)
-        #cv2.waitKey(1)
+        # corr = draw_correspondences(left_color, right_color, left_corners, right_corners)
+        # cv2.imshow("correspondences", corr)
+        # cv2.waitKey(1)
         # cv2.imshow("checkerboard", detection)
 
         # rvec rota puntos del sistema de coordenadas del objeto al sistema de coordenadas de la cámara
         # rvec is the rotation vector and tvec is the movement vector of the cameras in respect to the checkerboard
+
         ret, rvec, tvec = cv2.solvePnP(
             object_points_mm,
             left_corners,
@@ -152,6 +161,9 @@ for left_file_name, right_file_name in zip(
         point_cloud = o_T_c @ np.vstack((point_cloud.T, np.ones(point_cloud.shape[0])))
         point_cloud = point_cloud[:3].T
 
+        # Filter points so only the parts of interest of the scene are reconstructed
+        point_cloud, colors = filter_point_cloud(point_cloud, colors, 'raiz')
+
         all_points_3d = np.vstack((all_points_3d, point_cloud))
         all_colors = np.vstack((all_colors, colors))
         all_camera_extrinsics.append(c_T_o)
@@ -178,4 +190,8 @@ for c_T_o in all_camera_extrinsics:
     camera_frustums.append(camera_frustum)
 
 # Final scene rendering
-o3d.visualization.draw_geometries([pcd, axis, *camera_frustums])
+o3d.visualization.draw_geometries([pcd]) #axis, *camera_frustums
+
+# Saving point cloud
+output_file = "nube_de_puntos.ply"
+o3d.io.write_point_cloud(output_file, pcd)
