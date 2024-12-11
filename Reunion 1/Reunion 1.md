@@ -10,6 +10,7 @@ Presentar una overview de los mecanismos de reconstrucción existentes
 - [[A Comparison and Evaluation of Multi-View Stereo Reconstruction Algorithms]]
 - [[A Survey of Methods for Volumetric Scene Reconstruction from Photographs]]
 - [[Algorithms, From Photo-Consistency to 3D Reconstruction]]
+- [[Detailed Reconstruction of 3D Plant Root Shape]]
 
 Resumen: [[Métodos de reconstrucción volumétrica de escena]]
 

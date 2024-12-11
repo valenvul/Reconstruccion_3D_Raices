@@ -1,0 +1,14 @@
+{
+  "accentColor": "#cecece",
+  "cssTheme": "Ultra Lobster",
+  "theme": "system",
+  "baseFontSize": 16,
+  "textFontFamily": "",
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "Notebook Backgrounds",
+    "enlarge-image-on-hover"
+  ],
+  "baseFontSizeAction": false,
+  "translucency": false
+}

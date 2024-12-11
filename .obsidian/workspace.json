@@ -1,0 +1,303 @@
+{
+  "main": {
+    "id": "be8472ddc2d65269",
+    "type": "split",
+    "children": [
+      {
+        "id": "36a95c9229d216d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69199b7c84847450",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reunion 5/Reunion 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Reunion 5"
+            }
+          },
+          {
+            "id": "31e9419fe629e0e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reunion 1/Métodos de reconstrucción volumétrica de escena.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Métodos de reconstrucción volumétrica de escena"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1813d150e127e9d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "86860c1b7fcf82df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b88c469f5d889970",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8375de24b9af5bdd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dee74b0a2ead7415",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.50390243530273
+  },
+  "right": {
+    "id": "299eb7d6429a5a5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d91d417d79f6ee2",
+        "type": "tabs",
+        "dimension": 35.888888888888886,
+        "children": [
+          {
+            "id": "227b896a29cf8605",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "d66f978b163a9f0e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "207a8cb69d22cf97",
+        "type": "tabs",
+        "dimension": 64.11111111111111,
+        "children": [
+          {
+            "id": "7d6c60abaab08fc3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "17b812cc85b3560c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "e4e2a36bd86fcfbb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f7e10ae3b200fc63",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Reconstrucción 3D de raíces.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Reconstrucción 3D de raíces"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "workspaces:Manage workspace layouts": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "omnisearch:Omnisearch": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "floating": {
+    "id": "ce61f407d40b3dae",
+    "type": "floating",
+    "children": [
+      {
+        "id": "89cda7eb05eab99f",
+        "type": "window",
+        "children": [
+          {
+            "id": "4ecde2ec39175f52",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b309c985bee219fc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Catalogo de Recursos/Stereo Camera Calibration.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Stereo Camera Calibration"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1080,
+        "y": 113,
+        "width": 600,
+        "height": 744,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "b309c985bee219fc",
+  "lastOpenFiles": [
+    "Reunion 5/Reunion 5.md",
+    "Catalogo de Recursos/Stereo Camera Calibration.md",
+    "Reunion 3/stereo_reconstruction_apriltags/results/raiz_tablero.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results/raiz_9mm_board.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results/raiz_6mm_board.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results/nube_de_puntos.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results/8_apriltags_16_fotos.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results/16_apriltags_16_fotos.ply",
+    "Reunion 3/stereo_reconstruction_apriltags/results",
+    "Catalogo de Recursos/Hartley-Zisserman.md",
+    "Reunion 3/results.zip",
+    "img/Screenshot 2024-12-11 at 12.46.47.jpg",
+    "Reunion 4/Reunion 4.md",
+    "Reunion 3/Reunion 3.md",
+    "Reunion 2/Reunion 2.md",
+    "Reunion 1/Reunion 1.md",
+    "Reunion 1/Métodos de reconstrucción volumétrica de escena.md",
+    "Catalogo de Recursos/Papers/Masuda_3D_Shape_Reconstruction_of_Plant_Roots_in_a_Cylindrical_Tank_ICCVW_2019_paper.pdf",
+    "Catalogo de Recursos/Papers/Detailed_reconstruction_of_3D_plant_root_shape.pdf",
+    "Catalogo de Recursos/Papers/Detailed Reconstruction of 3D Plant Root Shape.md",
+    "Reconstrucción 3D de raíces.md",
+    "Reunion 3/Breakdown del código.md",
+    "Catalogo de Recursos/Szeliski.md",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_15.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_14.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_13.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_12.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_11.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_10.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_9.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_8.jpg",
+    "Reunion 2/stereo_reconstruction/data/stereo/captures/raiz_6mm_board/right_7.jpg",
+    "Reunion 4/Geometría epipolar y cálculo de pointcloud.md",
+    "Reunion 2/Camera Calibration.md",
+    "OpenCV Bootcamp.md",
+    "Medical Imaging workshop.md",
+    "Reunion 1/Reconstruccion 3D.md",
+    "Reunion 1/A Comparison and Evaluation of Multi-View Stereo Reconstruction Algorithms.md",
+    "Reunion 1/A Survey of Methods for Volumetric Scene Reconstruction from Photographs.md",
+    "Reunion 1/Algorithms, From Photo-Consistency to 3D Reconstruction.md",
+    "Reunion 1/Algoritmos de reconstruccion.md",
+    "Reunion 1/Introducción a la Visión por computadora.md",
+    "01_Templates/Notas cientificas.md",
+    "Reunion-2/stereodemo-main/datasets/eth3d_lowres/README.md",
+    "Reunion-2/stereodemo-main/datasets/sceneflow/README.md",
+    "Untitled.canvas"
+  ]
+}

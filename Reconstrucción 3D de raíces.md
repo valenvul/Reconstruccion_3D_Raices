@@ -18,11 +18,9 @@ Oficina LIAA: 2111
 - [[Reunion 1]]
 - [[Reunion 2]]
 - [[Reunion 3]]
+- [[Reunion 4]]
 # Recursos
 Camera Calibration in Matlab https://data.caltech.edu/records/jx9cx-fdh55
 
 Datastes: https://github.com/openMVG/Image_datasets
-
-
-
 

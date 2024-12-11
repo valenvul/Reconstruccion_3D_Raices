@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiSigma",
+      "LiBadgePercent",
+      "LiBookOpenText",
+      "FasCode",
+      "FarImage"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "debugMode": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconInTitlePosition": "above",
+    "lucideIconPackType": "native"
+  },
+  "Inge-II/Talleres": "FasCode",
+  "Algebra I/taller": "FasCode",
+  "Algo I/Labos": "FasCode",
+  "Inge-II/Teóricas": "LiBookOpenText",
+  "Logica y Computabilidad/Practicas": "LiSigma"
+}
